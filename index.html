@@ -19,14 +19,42 @@
         		<h1>Hi there, I'm Rodrigo Vieira!</h1>
 				<p>I'm best known as someone from <em>some place</em>. Don't trust me. <a href="/about">Read more about my life...</a></p>
 			<img src="img.gif" />
-                <div class="row">
-                <div class="column">
-                    <img src="sig.gif" alt="Densidade superficial" style="width:50%">
-                </div>
-                <div class="column">
-                    <img src="mag.gif" alt="Curva de luz" style="width:50%">
-                </div>
-                </div>
+<style>
+.line{  /* Describes only positioning behaviour */
+    display: block; /* Not important, but helpful in this case */
+    clear: both;    /* Not important, but helpful in this case */
+}
+
+.line__figure{ /* Describes only positioning behaviour */
+    float:left;
+}
+
+.figure{ /* Describes only view representation. */
+    display: block; /* Not important, but helpful in this case */
+}
+
+.figure__image{
+    background: lightgray;
+    width: 400px;
+    height: 300px;
+}
+</style>
+<article>
+    <section class='line'>
+        <figure class="sig.gif">
+            <img class="figure__image top" src="top10.jpg" />
+            <figcaption>Fig1. Production value and quantity
+            of the 10 top commodities</figcaption>
+        </figure>
+        <figure class="mag.gif">
+            <img class="figure__image average" src="average.jpg" />
+            <figcaption>Fig2. Averages per metric ton</figcaption>
+        </figure>
+    </section>
+    <section class='line'>
+    Some text
+    </section>
+</article>
     		</div><!-- /.blurb -->
 		</div><!-- /.container -->
 		<footer>
